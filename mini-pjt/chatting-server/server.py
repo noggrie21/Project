@@ -7,7 +7,7 @@ name = "hi"
 my_name = 1
 
 
-server_socket = socket(AF_INET, SOCK_STREAM)  # 소켓 정의
+server_socket = socket(AF_INET, SOCK_STREAM)  # 소켓 정의(AF_INET: IPv4, SOCK_STREAM: TCP)
 server_socket.bind(('', port))  # 서버가 정해진 포트번호로 지정된 소켓을 생성
 server_socket.listen(5)  # 최대로 들어올 수 있는 소켓 갯수 지정
 
